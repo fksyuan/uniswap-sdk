@@ -55,8 +55,15 @@ export function currencyEquals(currencyA: Currency, currencyB: Currency): boolea
     return currencyA === currencyB
   }
 }
-
+//modify wcc 在WETH增加ALAYA货币 此处考量是否重新设计
 export const WETH = {
+  [ChainId.ALAYA]: new Token(
+    ChainId.ALAYA,
+    'atx1wgpds7gwu949cejjva6dxk5dq828893zsf77qm',
+    18,
+    'WATP',
+    'Wrapped Atp'
+  ),
   [ChainId.MAINNET]: new Token(
     ChainId.MAINNET,
     '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',

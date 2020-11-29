@@ -1,6 +1,8 @@
-import { Contract } from '@ethersproject/contracts'
+//modify by wcc 替换fks包
+// import { Contract } from '@ethersproject/contracts'
+import { Contract } from '@fksyuan/contracts'
 import { getNetwork } from '@ethersproject/networks'
-import { getDefaultProvider } from '@ethersproject/providers'
+import { getDefaultProvider } from '@fksyuan/providers'
 import { TokenAmount } from './entities/fractions/tokenAmount'
 import { Pair } from './entities/pair'
 import IUniswapV2Pair from '@uniswap/v2-core/build/IUniswapV2Pair.json'
@@ -22,7 +24,7 @@ export abstract class Fetcher {
   /**
    * Cannot be constructed.
    */
-  private constructor() {}
+  private constructor() { }
 
   /**
    * Fetch information for a given token on the given chain, using the given ethers provider.
@@ -43,15 +45,15 @@ export abstract class Fetcher {
       typeof TOKEN_DECIMALS_CACHE?.[chainId]?.[address] === 'number'
         ? TOKEN_DECIMALS_CACHE[chainId][address]
         : await new Contract(address, ERC20, provider).decimals().then((decimals: number): number => {
-            TOKEN_DECIMALS_CACHE = {
-              ...TOKEN_DECIMALS_CACHE,
-              [chainId]: {
-                ...TOKEN_DECIMALS_CACHE?.[chainId],
-                [address]: decimals
-              }
+          TOKEN_DECIMALS_CACHE = {
+            ...TOKEN_DECIMALS_CACHE,
+            [chainId]: {
+              ...TOKEN_DECIMALS_CACHE?.[chainId],
+              [address]: decimals
             }
-            return decimals
-          })
+          }
+          return decimals
+        })
     return new Token(chainId, address, parsedDecimals, symbol, name)
   }
 
