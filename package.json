@@ -1,5 +1,5 @@
 {
-  "name": "@uniswap/sdk",
+  "name": "@fksyuan/sdk",
   "license": "MIT",
   "version": "3.0.3",
   "description": "🛠 An SDK for building applications on top of Uniswap.",
@@ -8,10 +8,10 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/Uniswap/uniswap-sdk.git",
+  "repository": "https://github.com/fksyuan/uniswap-sdk.git",
   "keywords": [
     "uniswap",
-    "ethereum"
+    "alaya"
   ],
   "module": "dist/sdk.esm.js",
   "scripts": {
@@ -28,7 +28,9 @@
     "jsbi": "^3.1.1",
     "tiny-invariant": "^1.1.0",
     "tiny-warning": "^1.0.3",
-    "toformat": "^2.0.0"
+    "toformat": "^2.0.0",
+    "@fksyuan/contracts": "^5.0.1",
+    "@fksyuan/providers": "^5.0.2"
   },
   "peerDependencies": {
     "@ethersproject/address": "^5.0.0-beta",
