@@ -2,7 +2,7 @@ import { Price } from './fractions/price'
 import { TokenAmount } from './fractions/tokenAmount'
 import invariant from 'tiny-invariant'
 import JSBI from 'jsbi'
-import { pack, keccak256 } from '@ethersproject/solidity'
+import { pack, keccak256 } from '@fksyuan/solidity'
 //modify by wcc 替换成fks包
 import { getCreate2Address } from '@fksyuan/address'
 
