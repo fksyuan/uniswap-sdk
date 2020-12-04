@@ -31,7 +31,8 @@
     "toformat": "^2.0.0",
     "@fksyuan/contracts": "^5.0.1",
     "@fksyuan/providers": "^5.0.2",
-    "@fksyuan/solidity": "^5.0.1"
+    "@fksyuan/solidity": "^5.0.1",
+    "@alayanetwork/web3-utils": "^0.13.2"
   },
   "peerDependencies": {
     "@ethersproject/address": "^5.0.0-beta",

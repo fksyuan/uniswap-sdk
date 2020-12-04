@@ -25,9 +25,9 @@ export enum Rounding {
 }
 
 //modify wcc 修改了factory address
-export const FACTORY_ADDRESS = 'atx1kw9qc3evrtsg3cm8engp524j5asvhvn39nt88l'
+export const FACTORY_ADDRESS = 'atx1khdytqr63arj0gj7dhgygj2j8pzd8685rwr73k'
 //modify wcc 修改了init_HASH address
-export const INIT_CODE_HASH = '0xaa3322d95efbdbd497508281e7153c463180a5ea6c43fda1527af5129bd36d54'
+export const INIT_CODE_HASH = '0xe9edd4c8d399ea9ab9ca65e628cdc4b6c1b705d219eb599c64ecfd73009cb217'
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
 
