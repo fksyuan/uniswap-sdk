@@ -2,7 +2,7 @@ import invariant from 'tiny-invariant'
 import { ChainId } from '../constants'
 import { validateAndParseAddress } from '../utils'
 import { Currency } from './currency'
-import { decodeBech32Addres } from "@alayanetwork/web3-utils";
+import { decodeBech32Address } from "@alayanetwork/web3-utils";
 
 /**
  * Represents an ERC20 token with a unique address and some metadata.
@@ -38,7 +38,7 @@ export class Token extends Currency {
   public sortsBefore(other: Token): boolean {
     invariant(this.chainId === other.chainId, 'CHAIN_IDS')
     invariant(this.address !== other.address, 'ADDRESSES')
-    return decodeBech32Addres(this.address.toLowerCase()) < decodeBech32Addres(other.address.toLowerCase())
+    return decodeBech32Address(this.address.toLowerCase()) < decodeBech32Address(other.address.toLowerCase())
   }
 }
 
