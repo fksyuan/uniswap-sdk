@@ -10,7 +10,7 @@ export enum ChainId {
   RINKEBY = 4,
   GÖRLI = 5,
   KOVAN = 42,
-  ALAYA = 201030
+  ALAYA = 201018
 }
 
 export enum TradeType {
@@ -25,9 +25,9 @@ export enum Rounding {
 }
 
 //modify wcc 修改了factory address
-export const FACTORY_ADDRESS = 'atx1khdytqr63arj0gj7dhgygj2j8pzd8685rwr73k'
+export const FACTORY_ADDRESS = 'atp18duutvmccdm6tjpvvjvxxm8sh7y470whl6gjd3'
 //modify wcc 修改了init_HASH address
-export const INIT_CODE_HASH = '0xe9edd4c8d399ea9ab9ca65e628cdc4b6c1b705d219eb599c64ecfd73009cb217'
+export const INIT_CODE_HASH = '0x3cb2bd29953e4b3ebd25fdb1a642713425a63d44f07225f559035df30f8f75e7'
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
 

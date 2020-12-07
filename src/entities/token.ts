@@ -60,7 +60,7 @@ export function currencyEquals(currencyA: Currency, currencyB: Currency): boolea
 export const WETH = {
   [ChainId.ALAYA]: new Token(
     ChainId.ALAYA,
-    'atx10upn9fkx86ghr7gslstk4p2hyskh2zj7y0x4hw',
+    'atp1nxsg04rpajmrxs6zl8y0acfcc52h2zcy8jqw6e',
     18,
     'WATP',
     'Wrapped Atp'
