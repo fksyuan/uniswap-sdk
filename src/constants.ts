@@ -25,7 +25,7 @@ export enum Rounding {
 }
 
 //modify wcc 修改了factory address
-export const FACTORY_ADDRESS = 'atp18duutvmccdm6tjpvvjvxxm8sh7y470whl6gjd3'
+export const FACTORY_ADDRESS = 'atp10upn9fkx86ghr7gslstk4p2hyskh2zj7wf6lyy'
 //modify wcc 修改了init_HASH address
 export const INIT_CODE_HASH = '0x3cb2bd29953e4b3ebd25fdb1a642713425a63d44f07225f559035df30f8f75e7'
 
